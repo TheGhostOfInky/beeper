@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
         }
         if(!strcmp("--loop",argv[i])||!strcmp("-l",argv[i])) {
             loop = TRUE;
-            if(argc > i) {
+            if(argc > i+1) {
                 long l_time = strtol(argv[i+1],NULL,10);
                 if(l_time > 0) {
                     time = l_time;
